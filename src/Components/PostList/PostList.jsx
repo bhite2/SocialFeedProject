@@ -1,3 +1,4 @@
+import LikeDislikeButton from '../LikeDislikeButton/LikeDislikeButton';
 
 const PostList = (props) => {
     return ( 
@@ -11,8 +12,7 @@ const PostList = (props) => {
                     <div>
                     {entry.post}
                     </div>
-                    
-                    
+                    <LikeDislikeButton/>
                 </div>
              )
           })}
