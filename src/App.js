@@ -1,22 +1,29 @@
 import React, { useState } from 'react';
-import PostList from './Components/PostList/PostList'
-import CreatePostForm from './Components/CreatePostForm/CreayePostForm';
+import PostList from './Components/PostList/PostList';
+import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
 import NavBar from './Components/NavBar/NavBar';
+import './App.css';
 
 
 function App() {
 
-  const [entries, setEntries] = useState()
+  const [entries, setEntries] = useState([])
 
   function addNewEntry(entry){
-    let tempEntries = [entry, ...entries]
+    let tempEntries = [...entries, entry]
     setEntries(tempEntries);
   }
   return (
     <div>
+      <div>
       <NavBar/>
-      <CreatePostForm addNewEntryProperty={addNewEntry}/>
-      <PostList/>
+      </div>
+      <div className='border-box'>
+        <CreatePostForm addNewEntryProperty={addNewEntry}/>
+      </div>
+      <div className='border-box'>
+        <PostList parentEntries={entries}/>
+     </div>
     </div>
   );
 }

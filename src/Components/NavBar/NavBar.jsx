@@ -1,9 +1,8 @@
+
 const NavBar = (props) => {
     return ( 
-        <div>
-            
-        </div>
-     );
+        <h1>Hi</h1>
+    );
 }
  
 export default NavBar;

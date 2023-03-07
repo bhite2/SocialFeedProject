@@ -16,11 +16,11 @@ function handleSubmit(event) {
     }
     return ( 
         <form onSubmit={handleSubmit}>
-            <div>
+            <div className="form-group">
                 <label>Name</label>
                 <input type = 'text' value ={name} onChange={(event) => setName(event.target.value)}></input>
             </div>
-            <div>
+            <div className="form-group">
                 <label>Post</label>
                 <input type='textarea' value={post} onChange={(event) => setPost(event.target.value)}></input>
             </div>
