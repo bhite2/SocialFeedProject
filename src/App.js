@@ -18,13 +18,17 @@ function App() {
       <div>
       <NavBar/>
       </div>
-      <div className='border-box'>
-        <CreatePostForm addNewEntryProperty={addNewEntry}/>
+      <div className='center aligned'>
+        <div className='border-box'>
+          <CreatePostForm addNewEntryProperty={addNewEntry}/>
+        </div>
+        <div className='border-box'>
+          <PostList parentEntries={entries}/>
+        </div>
       </div>
-      <div className='border-box'>
-        <PostList parentEntries={entries}/>
-     </div>
+
     </div>
+
   );
 }
 

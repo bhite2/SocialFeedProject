@@ -8,7 +8,7 @@ const LikeDislikeButton = (props) => {
 
     function handleLike() {
         if (buttonLike === 'inactive') {
-            setButtonLike('active')
+            setButtonLike('like-active')
             setButtonDislike('inactive');
         }
         else{
@@ -17,7 +17,7 @@ const LikeDislikeButton = (props) => {
     }
     function handleDislike() {
         if (buttonDislike === 'inactive') {
-            setButtonDislike('active')
+            setButtonDislike('dislike-active')
             setButtonLike('inactive');
         }
         else{
@@ -27,10 +27,10 @@ const LikeDislikeButton = (props) => {
     
     return ( 
         <div>
-            <div>
+            <div class='likedislike'>
                 <button className={buttonLike} onClick={handleLike}>Like</button>
             </div>
-            <div>
+            <div class='likedislike'>
                 <button className={buttonDislike} onClick={handleDislike}>Dislike</button>
             </div>
             

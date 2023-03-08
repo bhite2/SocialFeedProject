@@ -1,11 +1,12 @@
 import LikeDislikeButton from '../LikeDislikeButton/LikeDislikeButton';
+import './PostList.css'
 
 const PostList = (props) => {
     return ( 
         <body>
           {props.parentEntries.map((entry) => {
             return (
-                <div>
+                <div className='post'>
                     <div>
                     {entry.name}
                     </div>
@@ -13,6 +14,7 @@ const PostList = (props) => {
                     {entry.post}
                     </div>
                     <LikeDislikeButton/>
+                    <hr></hr>
                 </div>
              )
           })}

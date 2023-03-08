@@ -1,7 +1,17 @@
-.active {
+
+
+.like-active {
     background-color: green;
 }
 
 .inactive {
     background-color: grey;
+}
+
+.dislike-active {
+    background-color: red;
+}
+
+.likedislike{
+    align-items: flex-end;
 }
