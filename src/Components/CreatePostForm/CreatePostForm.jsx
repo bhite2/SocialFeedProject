@@ -18,14 +18,14 @@ function handleSubmit(event) {
         <form onSubmit={handleSubmit}>
             <div className="form-group">
                 <label>Name</label>
-                <input type = 'text' value ={name} onChange={(event) => setName(event.target.value)}></input>
+                <input type = 'text' className='form-control' value ={name} onChange={(event) => setName(event.target.value)}></input>
             </div>
             <div className="form-group">
                 <label>Post</label>
-                <input type='textarea' value={post} onChange={(event) => setPost(event.target.value)}></input>
+                <input type='textarea' className='form-control' rows='5' value={post} onChange={(event) => setPost(event.target.value)}></input>
             </div>
-            <div>
-                <button type='submit'>Post</button>
+            <div style={{display: 'flex', justifyContent: 'right', margin: '1em'}}>
+                <button type="submit">Create</button>
             </div>
 
         </form>

@@ -18,7 +18,7 @@ function App() {
       <div>
       <NavBar/>
       </div>
-      <div className='center aligned'>
+      <div>
         <div className='border-box'>
           <CreatePostForm addNewEntryProperty={addNewEntry}/>
         </div>

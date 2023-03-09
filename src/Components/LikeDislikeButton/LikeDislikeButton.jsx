@@ -26,11 +26,11 @@ const LikeDislikeButton = (props) => {
     }
     
     return ( 
-        <div>
-            <div class='likedislike'>
+        <div style={{display: 'flex', justifyContent: 'right'}}>
+            <div>
                 <button className={buttonLike} onClick={handleLike}>Like</button>
             </div>
-            <div class='likedislike'>
+            <div>
                 <button className={buttonDislike} onClick={handleDislike}>Dislike</button>
             </div>
             
